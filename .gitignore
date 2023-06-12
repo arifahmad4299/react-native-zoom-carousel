@@ -1,2 +1,6 @@
 node_modules
-/lib
+/lib/common
+/lib/config
+/lib/views
+lib/index.d.ts
+lib/index.js
