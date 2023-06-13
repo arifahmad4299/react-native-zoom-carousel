@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
       position: 'absolute',
       left: 0,
       right: 0,
-      top: windowHeight * 0.056,
+      top: 0,
       // bottom: windowHeight * 0.067,
       bottom: 0,
       backgroundColor: 'white',
