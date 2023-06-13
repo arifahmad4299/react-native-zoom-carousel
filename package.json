@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp -R images lib/images",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/arifahmad4299/react-native-zoom-carousel#readme",
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "images"
   ],
   "peerDependencies": {
     "react": "^18.2.0",
