@@ -9,9 +9,10 @@ export const styles = StyleSheet.create({
     zIndex: 340,
     position: 'absolute',
     backgroundColor: 'white',
+    margin: -15,
     left: 0,
     right: 0,
-    top: windowHeight * 0.056,
+    top: 0,
     bottom: 0,
   },
   buttonContainer: {

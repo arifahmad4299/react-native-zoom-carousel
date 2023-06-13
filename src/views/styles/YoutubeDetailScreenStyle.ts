@@ -7,10 +7,11 @@ export const styles = StyleSheet.create({
     zIndex: 430,
     backgroundColor: 'white',
     justifyContent: 'space-between',
+    margin: -15,
     position: 'absolute',
     left: 0,
     right: 0,
-    top: windowHeight * 0.056,
+    top: 0,
     bottom: 0,
   },
   container: {
