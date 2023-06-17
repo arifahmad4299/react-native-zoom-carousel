@@ -15,7 +15,7 @@ const ImageDetailScreen = ({fullImage, currentIndex, data}: any) => {
   const [translateY, setTranslateY] = useState(0);
   const [currentNewIndex, setCurrentNewIndex] = useState(currentIndex);
 
-  const imageRef = useRef();
+  const imageRef = useRef(null);
 
   const panResponder = PanResponder.create({
     onStartShouldSetPanResponder: () => true,
@@ -72,7 +72,9 @@ const ImageDetailScreen = ({fullImage, currentIndex, data}: any) => {
             height={imageHeight}
             href={data?.type === 'local-data'? data[currentNewIndex] : data[currentNewIndex]?.url}
             onPress={handleDoubleTap}
-            style={transformStyle}
+            translateX={translateX}
+            translateY={translateY}
+            scale={scale}
           />
         </Svg>
       </View>
