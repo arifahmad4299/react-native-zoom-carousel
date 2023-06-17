@@ -12,7 +12,7 @@ Performant and customizable carousel component for React Native with zooming and
 </div>
 
 <p align="center">
-  <img src="https://github.com/your-username/react-native-zoom-carousel/blob/main/docs/demo.gif" alt="Demo" />
+  <img src="https://github.com/arifahmad4299/react-native-zoom-carousel/blob/main/images/ThumbnailReadme.gif" alt="Demo" />
 </p>
 
 ## Table of Contents
