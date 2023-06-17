@@ -4,13 +4,10 @@ import Video from 'react-native-video';
 import {CloseButton} from '../common/CloseButton';
 import {styles} from './styles/VideoDetailScreenStyle';
 
-interface VideoDetailProps {
-  navigation: any;
-}
 const VideoDetailScreen = ({fullVideo, url}: any) => {
   return (
     <SafeAreaView style={styles.container}>
-      <CloseButton onPress={() => fullVideo()} />
+      <CloseButton style={styles.closeButton} onPress={() => fullVideo()} />
       <Video
         style={styles.backgroundVideo}
         source={{

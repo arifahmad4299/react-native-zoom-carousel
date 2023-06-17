@@ -1,6 +1,6 @@
 {
   "name": "react-native-zoom-carousel",
-  "version": "1.1.0",
+  "version": "1.1.3",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -14,7 +14,17 @@
   },
   "keywords": [
     "react native carousel",
-    "carousel components"
+    "carousel components",
+    "react-native carousel",
+    "zoom carousel",
+    "image slider",
+    "panning carousel",
+    "zooming carousel",
+    "carousel component",
+    "React Native zoom",
+    "touch-enabled carousel",
+    "customizable carousel",
+    "interactive carousel"
   ],
   "author": "Marvel Apps <hello@marvelapps.co>",
   "license": "MIT",

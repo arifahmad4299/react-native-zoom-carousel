@@ -1,9 +1,9 @@
 import { Image, Pressable, StyleSheet, Text } from "react-native";
 import Glyphs from "../config/Glyphs";
 
-export const CloseButton = ({onPress}: any) => {
+export const CloseButton = ({onPress, style}: any) => {
     return (
-        <Pressable style={styles.buttonContainer} onPress={onPress}>
+        <Pressable style={[styles.buttonContainer, style]} onPress={onPress}>
             <Image style={styles.image} source={Glyphs.CloseIcon} />
         </Pressable>
     )
