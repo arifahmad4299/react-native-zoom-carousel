@@ -1,18 +1,15 @@
 import {StyleSheet} from 'react-native';
-import {windowHeight} from '../../config/helper';
+import {windowHeight, windowWidth} from '../../config/helper';
 
 export const styles = StyleSheet.create({
   root: {
-    flex: 1,
     zIndex: 430,
     backgroundColor: 'white',
     justifyContent: 'space-between',
-    margin: -15,
-    position: 'absolute',
-    left: 0,
-    right: 0,
+    height: windowHeight > 800 ? windowHeight - 100 : windowHeight - 50,
+    width: windowWidth,
     top: 0,
-    bottom: 0,
+    position: 'absolute'
   },
   container: {
     flex: 1,

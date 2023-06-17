@@ -15,7 +15,7 @@ const ImageDetailScreen = ({fullImage, currentIndex, data}: any) => {
   const [translateY, setTranslateY] = useState(0);
   const [currentNewIndex, setCurrentNewIndex] = useState(currentIndex);
 
-  const imageRef = useRef(null);
+  const imageRef = useRef();
 
   const panResponder = PanResponder.create({
     onStartShouldSetPanResponder: () => true,
@@ -47,13 +47,20 @@ const ImageDetailScreen = ({fullImage, currentIndex, data}: any) => {
     setTranslateY(scale === 1 ? newTranslateY : 0);
   };
 
+  const transformStyle = {
+    transform: [
+      {translateX: translateX},
+      {translateY: translateY},
+      {scale: scale},
+    ],
+  };
 
   return (
-    <SafeAreaView style={styles.root}>
+    <View style={styles.root}>
       <View style={styles.topContainer}>
         <CloseButton onPress={() => fullImage()}/>
       </View>
-      <View style={styles.container}>
+         <View style={styles.container}>
         <Svg
           width={imageWidth}
           height={imageHeight}
@@ -65,9 +72,7 @@ const ImageDetailScreen = ({fullImage, currentIndex, data}: any) => {
             height={imageHeight}
             href={data?.type === 'local-data'? data[currentNewIndex] : data[currentNewIndex]?.url}
             onPress={handleDoubleTap}
-            translateX={translateX}
-            translateY={translateY}
-            scale={scale}
+            style={transformStyle}
           />
         </Svg>
       </View>
@@ -83,7 +88,7 @@ const ImageDetailScreen = ({fullImage, currentIndex, data}: any) => {
           currentIndex={currentNewIndex}
         />
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 

@@ -33,7 +33,7 @@ interface CarouselProps {
   watchVideoText?: string;
 }
 
-const MediaCarousel = ({
+const CarouselScreen = ({
   data,
   localImagesData,
   errorMessage = 'No image',
@@ -150,8 +150,7 @@ const MediaCarousel = ({
 
   return (
     <>
-      <SafeAreaView>
-        <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
           <ScrollView
             horizontal
             pagingEnabled
@@ -193,13 +192,11 @@ const MediaCarousel = ({
                   );
                 })}
           </ScrollView>
-        </View>
         <CarouselSlider
           data={localData ? localData : serverData}
           currentIndex={currentIndex}
           isImageDetail={false}
         />
-      </SafeAreaView>
       {isFullImage && (
         <ImageDetailScreen
           fullImage={fullImage}
@@ -211,8 +208,9 @@ const MediaCarousel = ({
       {isYouTubeScreen && (
         <YoutubeDetailScreen fullYoutubeVideo={fullYoutubeVideo} url={url} />
       )}
+      </SafeAreaView>
     </>
   );
 };
 
-export default MediaCarousel;
+export default CarouselScreen;
