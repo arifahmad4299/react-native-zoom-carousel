@@ -20,7 +20,7 @@ Performant and customizable carousel component for React Native with zooming and
 - [Contributing](#contributing)
 - [License](#license)
 
-## Installation {#installation}
+## Installation
 
 To use `react-native-zoom-carousel` in your React Native project, you need to follow these steps:
 
@@ -30,7 +30,7 @@ To use `react-native-zoom-carousel` in your React Native project, you need to fo
    npm install react-native-zoom-carousel
    ```
 
-## Usage {#usage}
+## Usage
 
 **Note: In react-native-zoom-carousel `data` props is used for server/online images and for local/offline images use `localImagesData` props (see below).**
 
